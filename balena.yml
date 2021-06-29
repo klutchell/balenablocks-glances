@@ -1,0 +1,26 @@
+name: glances
+description: >-
+  A cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/balenablocks/glances'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/balenablocks/glances/master/logo.png'
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi4-64
+    # - fincm3
+    # - raspberrypi400-64
+    # - intel-nuc
+    # - genericx86-64-ext
+    # - jetson-nano
