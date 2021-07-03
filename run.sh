@@ -14,4 +14,6 @@ sed -i "s/^FONTFACE.*/FONTFACE=\"${FONTFACE}\"/" /etc/default/console-setup
 sed -i "s/^FONTSIZE.*/FONTSIZE=\"${FONTSIZE}\"/" /etc/default/console-setup
 dpkg-reconfigure console-setup 2> /dev/null > /dev/tty0
 
+dmesg -n 1
+
 python3 -m glances -C /glances/conf/glances.conf $GLANCES_OPT > /dev/tty0

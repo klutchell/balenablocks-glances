@@ -13,8 +13,8 @@ ENV DBUS_SYSTEM_BUS_ADDRESS 'unix:path=/host/run/dbus/system_bus_socket'
 ENV FONTFACE TerminusBold
 ENV FONTSIZE 18x16
 
-COPY init.sh /
+COPY run.sh /
 
-RUN chmod +x /init.sh
+RUN chmod +x /run.sh
 
-CMD [ "/init.sh" ]
+CMD [ "/run.sh" ]
